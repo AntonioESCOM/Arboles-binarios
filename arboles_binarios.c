@@ -112,8 +112,14 @@ int main(){
 					case 3:
 						printf("Suma de nodos totales %d\n",sumNodosT(miptrRef2));
 					break;
+					case 4:
+						printf("Suma de nodos hoja totales %d\n",sumNodosHoja(miptrRef2));
+					break;
 					case 5:
 						printf("Nodos internos totales %d\n",numNodosIn(miptrRef2));
+					break;
+					case 6:
+						printf("Suma de nodos internos %d\n",sumNodosIn(miptrRef2));
 					break;
 					case 7:
 						printf("El minimo numero en el arbol es %d\n",getMinNod(miptrRef2));
@@ -122,6 +128,7 @@ int main(){
 						printf("El maximo numero en el arbol es %d\n",getMaxNod(miptrRef2));
 					break;
 					case 9:
+						printf("Ingrese el numero del cual desee partir\n");
 						scanf("%d",&aux);
 						printf("El numero de nodos mayores es de %d\n",numNodosMayores(miptrRef2,aux));
 					break;
