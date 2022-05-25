@@ -102,7 +102,7 @@ int main(){
 				system("cls");
 				printf("Libreria externa por usuario\n");
 				switch(menuExtLib()){
-					int aux;
+					int aux=0;
 					case 1:
 						printf("Numero de Nodos: %d\n",numNodos(miptrRef2));
 					break;
@@ -131,6 +131,48 @@ int main(){
 						printf("Ingrese el numero del cual desee partir\n");
 						scanf("%d",&aux);
 						printf("El numero de nodos mayores es de %d\n",numNodosMayores(miptrRef2,aux));
+					break;
+					case 10:
+						printf("Ingrese el numero del cual desee partir\n");
+						scanf("%d",&aux);
+						printf("El numero de nodos menores es de %d\n",numNodosMenores(miptrRef2,aux));
+					break;
+					case 11:
+						printf("Ingrese el numero del cual desee partir\n");
+						scanf("%d",&aux);
+						printf("La suma de nodos mayores es de %d\n",numNodosMayoresSum(miptrRef2,aux));
+					break;
+					case 12:
+						printf("Ingrese el numero del cual desee partir\n");
+						scanf("%d",&aux);
+						printf("La suma de nodos menores es de %d\n",numNodosMenoresSum(miptrRef2,aux));
+					break;
+					case 13:
+						printf("Ingrese el numero del cual desee buscar en el arbol\n");
+						scanf("%d",&aux);
+						if(miembro(miptrRef2,aux))
+							printf("El dato pertenece al arbol\n");
+						else
+							printf("El dato no pertenece al arbol\n");
+					break;
+					case 15:
+						printf("Se elimino el nodo que contenia %d\n",eliminarMin(miptrRef2));
+					break;
+					case 16:
+						printf("Ingrese el nodo el cual desee eliminar\n");
+						scanf("%d",&aux);
+						eliminar(miptrRef2,aux);
+						printf("El nodo se elimino%d\n");
+					break;
+					case 17:
+						printf("Ingrese el numero a partir del cual se inicia la busqueda\n");
+						scanf("%d",&aux);
+						impresionMayores(miptrRef2,aux);
+					break;
+					case 18:
+						printf("Ingrese el numero a partir del cual se inicia la busqueda\n");
+						scanf("%d",&aux);
+						impresionMenores(miptrRef2,aux);
 					break;
 				}
 					
